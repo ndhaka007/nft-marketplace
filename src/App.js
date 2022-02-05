@@ -8,7 +8,7 @@ import Home from './pages';
 // import AnnualReport from './pages/annual';
 // import Teams from './pages/team';
 // import Blogs from './pages/blogs';
-import ConnectWallet from './pages/connectWallet';
+import ConnectWallet from './pages/ConnectWallet';
 
 
 function App() {
