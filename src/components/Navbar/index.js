@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import {
   Nav,
   NavLink,
@@ -7,13 +7,24 @@ import {
   NavBtn,
   NavBtnLink,
 } from './NavbarElements';
-  
+import SlidingPanel from 'react-sliding-side-panel';
+import ConnectWallet from '../../pages/ConnectWallet';
+import SlideDrawer from '../SlideDrawer';
+
 const Navbar = () => {
+
+  const [openPanel, setOpenPanel] = useState(false)
+
+  let closePanel = <button onClick={() => setOpenPanel(false)}>Close</button>
+
   return (
     <>
       <Nav>
         <Bars />
         <NavMenu>
+          <NavLink to='/' activeStyle>
+            Home
+          </NavLink>
           <NavLink to='/about' activeStyle>
             About
           </NavLink>
@@ -33,11 +44,15 @@ const Navbar = () => {
           {/* <NavBtnLink to='/sign-in'>Sign In</NavBtnLink> */}
         </NavMenu>
         <NavBtn>
-          <NavBtnLink to='/connect-wallet'>Connect Wallet</NavBtnLink>
+          <NavBtnLink onClick={() => setOpenPanel(true)}>Connect Wallet</NavBtnLink>
         </NavBtn>
       </Nav>
+        <SlideDrawer 
+        isOpenPanel={openPanel}
+        closePanelButton = {closePanel}
+        />
     </>
   );
 };
-  
+
 export default Navbar;

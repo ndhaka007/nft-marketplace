@@ -22,7 +22,7 @@ function App() {
         <Route path='/annual' component={AnnualReport} />
         <Route path='/team' component={Teams} />
         <Route path='/blogs' component={Blogs} /> */}
-        <Route path='/connect-wallet' component={ConnectWallet} />
+        {/* <Route path='/connect-wallet' component={ConnectWallet} /> */}
       </Switch>
     </Router>
   );
