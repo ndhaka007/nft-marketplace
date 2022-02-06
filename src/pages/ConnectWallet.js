@@ -37,11 +37,15 @@ const ConnectWallet = () => {
     }
 
     return (
+        <div>
+            <div>
+                Wallet Address: {defaultAccount} 
+            </div>
         <div className='connectWallet'>
-            <h2>Connect Your Wallet</h2>
             <button onClick={connectWalletHandler}>{conntButtonText}</button>
 
             {errorMessage}
+        </div>
         </div>
     );
 };

@@ -7,8 +7,6 @@ import {
   NavBtn,
   NavBtnLink,
 } from './NavbarElements';
-import SlidingPanel from 'react-sliding-side-panel';
-import ConnectWallet from '../../pages/ConnectWallet';
 import SlideDrawer from '../SlideDrawer';
 
 const Navbar = () => {

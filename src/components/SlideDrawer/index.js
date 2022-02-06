@@ -15,6 +15,7 @@ const SlideDrawer = ({ isOpenPanel, closePanelButton }) => {
     return (
         <div>
             <div className={drawerClasses}>
+                <center>Connect Your Wallet</center>
                 <ConnectWallet />
                 {closePanelButton}
             </div>
