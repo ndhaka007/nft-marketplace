@@ -13,8 +13,6 @@ const Navbar = () => {
 
   const [openPanel, setOpenPanel] = useState(false)
 
-  let closePanel = <button onClick={() => setOpenPanel(false)}>Close</button>
-
   return (
     <>
       <Nav>
@@ -47,7 +45,7 @@ const Navbar = () => {
       </Nav>
         <SlideDrawer 
         isOpenPanel={openPanel}
-        closePanelButton = {closePanel}
+        setOpenPanel = {setOpenPanel}
         />
     </>
   );
