@@ -625,8 +625,10 @@ export const Depositing  = async () => {
           "type": "function"
         }
       ];
-      console.log(web3.eth);
-    const providerInstance = new web3.eth.Contract(addressProviderABI, "0x24a42fD28C976A61Df5D00D0599C34c4f90748c8");
+
+      const Web3 = new web3()
+      console.log(Web3.eth);
+    const providerInstance = new Web3.eth.Contract(addressProviderABI, "0x24a42fD28C976A61Df5D00D0599C34c4f90748c8");
 
     const lendingPoolAddress = await providerInstance.methods.getLendingPool().call()
     .catch((e) => {
@@ -1696,7 +1698,7 @@ export const Depositing  = async () => {
   
   const [account, setAccount] = useState("")
 
-  const lendingPoolInstance = new web3.eth.Contract(lendingPoolABI, lendingPoolAddress);
+  const lendingPoolInstance = new Web3.eth.Contract(lendingPoolABI, lendingPoolAddress);
 
   lendingPoolInstance.methods.deposit(
     "0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE", 10, 0).send({from: account, value: 10})
