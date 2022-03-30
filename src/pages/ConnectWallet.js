@@ -34,6 +34,7 @@ const ConnectWallet = () => {
 
     const accountChangeHandler = (newAccount) => {
         setDefaultAccount(newAccount);
+        localStorage.setItem('AccountID', newAccount);
     }
 
     return (
