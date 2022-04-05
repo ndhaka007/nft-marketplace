@@ -6,8 +6,10 @@ import {
   NavMenu,
   NavBtn,
   NavBtnLink,
+  LogoImage,
 } from './NavbarElements';
 import SlideDrawer from '../SlideDrawer';
+import Logo from '../../testing/logo.png';
 
 const Navbar = () => {
 
@@ -18,6 +20,7 @@ const Navbar = () => {
       <Nav>
         <Bars />
         <NavMenu>
+          <LogoImage src={Logo}/>
           <NavLink to='/' activeStyle>
             Home
           </NavLink>
