@@ -34,18 +34,20 @@ const ConnectWallet = () => {
 
     const accountChangeHandler = (newAccount) => {
         setDefaultAccount(newAccount);
+        localStorage.setItem('AccountID', newAccount);
     }
 
     return (
         <div>
+            <div className='WalletTopBorder'></div>
+            <center>Connect Your Wallet</center>
             <div>
                 Wallet Address: {defaultAccount} 
             </div>
-        <div className='connectWallet'>
-            <button onClick={connectWalletHandler}>{conntButtonText}</button>
-
-            {errorMessage}
-        </div>
+            <div className='connectWallet'>
+                <button onClick={connectWalletHandler}>{conntButtonText}</button>
+                {errorMessage}
+            </div>
         </div>
     );
 };

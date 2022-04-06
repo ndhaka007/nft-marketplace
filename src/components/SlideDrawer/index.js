@@ -23,7 +23,6 @@ const SlideDrawer = ({ isOpenPanel, setOpenPanel }) => {
         <div onClick = {handleOnClick}>
             <div className={drawerClasses}>
                 {/* add empty transaparent block to handle alignment of side bar */}
-                <center>Connect Your Wallet</center>
                 <ConnectWallet />
             </div>
             <div>

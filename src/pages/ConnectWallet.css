@@ -3,3 +3,11 @@
     border: 1px solid black;
     border-radius: 5px;
 }
+
+.WalletTopBorder {
+    opacity: 0;
+    height: 70px;
+    display: flex;
+    padding: 0.2rem calc((100vw - 1000px) / 2);
+    z-index: 12;
+}
