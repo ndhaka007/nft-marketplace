@@ -42,7 +42,13 @@ export const Bars = styled(FaBars)
     cursor: pointer;
   }
 `;
-
+  
+export const LogoImage = styled.img`
+  align-items: left;
+  height: 70%;
+  margin: 15px;
+`;
+  
 export const NavMenu = styled.div `
   display: flex;
   align-items: center;
