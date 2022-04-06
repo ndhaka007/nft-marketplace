@@ -7,13 +7,14 @@ import {
   NavBtn,
   NavBtnLink,
   LogoImage,
+
 } from './NavbarElements';
 import SlideDrawer from '../SlideDrawer';
 import Logo from '../../testing/logo.png';
 
 const Navbar = () => {
 
-  const [openPanel, setOpenPanel] = useState(false)
+    const [openPanel, setOpenPanel] = useState(false)
 
   return (
     <>
@@ -50,8 +51,8 @@ const Navbar = () => {
         isOpenPanel={openPanel}
         setOpenPanel = {setOpenPanel}
         />
-    </>
-  );
+     </>
+    );
 };
 
 export default Navbar;
