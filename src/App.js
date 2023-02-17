@@ -12,26 +12,16 @@ import ConnectWallet from './pages/ConnectWallet';
 
 
 function App() {
-    return ( <
-        Router >
-        <
-        Navbar / >
-        <
-        Switch >
-        <
-        Route path = '/'
-        exact component = { Home }
-        /> { /* <Route path='/about' component={Stake} /> */ } <
-        Route path = '/lend'
-        component = { Lend }
-        /> {
+    return ( <Router >
+        <Navbar / >
+        <Switch >
+        <Route path = '/' exact component = { Home }/> { /* <Route path='/about' component={Stake} /> */ }
+        <Route path = '/lend' component = { Lend }/> {
             /* <Route path='/annual' component={Liquidity Mining} />
                     <Route path='/team' component={Yeild farming} />
                     <Route path='/blogs' component={Team} />
                     <Route path='/connect-wallet' component={ConnectWallet} /> */
-        } <
-        /Switch> <
-        /Router>
+        } </Switch> </Router>
     );
 }
 
