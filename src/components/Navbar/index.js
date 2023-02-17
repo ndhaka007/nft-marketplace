@@ -36,6 +36,7 @@ const Navbar = () => {
           </NavLink>
           <NavLink to='/team' activeStyle>
             Teams
+            tems2
           </NavLink>
           <NavLink to='/blogs' activeStyle>
             Blogs
