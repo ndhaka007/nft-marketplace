@@ -39,6 +39,8 @@ const Navbar = () => {
           </NavLink>
           <NavLink to='/blogs' activeStyle>
             Blogs
+            Blogs2
+            Blogs3
           </NavLink>
           {/* Second Nav */}
           {/* <NavBtnLink to='/sign-in'>Sign In</NavBtnLink> */}
